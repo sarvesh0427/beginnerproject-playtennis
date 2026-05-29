@@ -5,12 +5,12 @@ import joblib
 
 app = FastAPI()
 
-# STEP 1: CONFIGURE CORS 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5500"], 
-    allow_methods=["*"], 
-    allow_headers=["*"], 
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # STEP 2: LOAD MODEL

@@ -12,8 +12,7 @@ document.getElementById('predictBtn').addEventListener('click', async () => {
 
     try {
         // 2. Send the data to the FastAPI backend
-        const response = await fetch('http://127.0.0.1:8000/predict', {
-            method: 'POST',
+        const response = await fetch('https://play-tennis-backend.onrender.com/predict', {method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
