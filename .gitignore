@@ -1,0 +1,29 @@
+# Python cache files (generated automatically when running FastAPI)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local Virtual Environments (never push your local env to GitHub)
+.venv/
+venv/
+env/
+ENV/
+dist/
+build/
+
+# Jupyter Notebook checkpoints (if used inside model_training)
+.ipynb_checkpoints/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Operating System clutter
+.DS_Store
+Thumbs.db
